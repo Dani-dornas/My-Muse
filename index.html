@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/counter.css" />
+    <link rel="stylesheet" href="./css/audio.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
     <link rel="stylesheet" href="./css/message.css" />
     <link rel="stylesheet" href="./css/timeline.css" />
@@ -26,6 +27,42 @@
         <h1>4 Meses desde que eu e você nos tornamos nós</h1>
         <p>Te amo demais, minha princesa ❤️</p>
       </header>
+
+      <audio id="background-music"></audio>
+
+      <div class="music-player">
+        <div class="current-title">
+          <span id="current-title"></span>
+          <span id="artist"></span>
+        </div>
+        <div class="progress-container">
+          <span id="current-time">0:00</span>
+          <input
+            type="range"
+            id="progress-bar"
+            value="0"
+            min="0"
+            max="100"
+            step="1"
+          />
+          <span id="duration">0:00</span>
+        </div>
+        <div class="music-controls">
+          <button onclick="prevMusic()">⏮️</button>
+          <button id="play-pause-btn">▶️</button>
+          <button onclick="nextMusic()">⏭️</button>
+          <input
+            type="range"
+            id="volume-control"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.1"
+          />
+        </div>
+      </div>
+
+      <script src="./js/audio.js"></script>
 
       <section class="counter">
         <h2>Nosso namoro tem...</h2>
@@ -99,32 +136,20 @@
         <h2>Nossos Momentos 📸</h2>
         <div class="photo-grid">
           <div class="photo-card">
-              <img
-                src="./imgs/first-photo.jpg"
-                class="photo"
-              />
-            <p>Nossa primeira foto (que ficou uma porcaria rsrsrs) </p>
+            <img src="./assets/imgs/first-photo.jpg" class="photo" />
+            <p>Nossa primeira foto (que ficou uma porcaria rsrsrs)</p>
           </div>
           <div class="photo-card">
-              <img
-                src="./imgs/Hopi-linguinha.jpg"
-                class="photo"
-              />
-            <p>Nossa primeira foto (que ficou uma porcaria rsrsrs) </p>
+            <img src="./assets/imgs/Hopi-linguinha.jpg" class="photo" />
+            <p>Nossa primeira foto (que ficou uma porcaria rsrsrs)</p>
           </div>
           <div class="photo-card">
-              <img
-                src="./imgs/Hopi linguinha2.jpg"
-                class="photo"
-              />
-            <p>Nossa primeira foto (que ficou uma porcaria rsrsrs) </p>
+            <img src="./assets/imgs/Hopi linguinha2.jpg" class="photo" />
+            <p>Nossa primeira foto (que ficou uma porcaria rsrsrs)</p>
           </div>
           <div class="photo-card">
-              <img
-                src="./imgs/first-photo.jpg"
-                class="photo"
-              />
-            <p>Nossa primeira foto (que ficou uma porcaria rsrsrs) </p>
+            <img src="./imgs/first-photo.jpg" class="photo" />
+            <p>Nossa primeira foto (que ficou uma porcaria rsrsrs)</p>
           </div>
         </div>
       </section>
