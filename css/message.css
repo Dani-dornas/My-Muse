@@ -1,0 +1,29 @@
+.message-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out 1.3s both;
+}
+
+.message-box h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.message-box p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.signature {
+    margin-top: 30px;
+    font-style: italic;
+    color: #764ba2;
+    font-size: 1.2em;
+}

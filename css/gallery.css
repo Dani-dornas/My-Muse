@@ -1,0 +1,80 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-family: 'Indie Flower', cursive;
+    animation: fadeInUp 1s ease-out 1.1s both;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Polaroid */
+.photo-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px 10px 75px;
+    /* mais espaço embaixo (estilo polaroid) */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    transform: rotate(-2deg);
+    width: 225px;
+    height: 300px;
+}
+
+/* Variação de rotação para dar cara de "colagem manual" */
+.photo-card:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.photo-card:hover {
+    transform: scale(1.05) rotate(0deg);
+}
+
+/* Durex no topo */
+.photo-card::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 20px;
+    background: rgba(255, 255, 200, 0.7);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Foto */
+.photo {
+    background: #ddd;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Texto embaixo da polaroid */
+.photo-card p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1em;
+    color: #333;
+    margin: 0;
+}

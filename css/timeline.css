@@ -1,0 +1,55 @@
+.timeline h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.timeline-item {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-out both;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+.timeline-item:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.timeline-item:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.timeline-item:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.timeline-item h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.timeline-item .date {
+    color: #764ba2;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    color: #555;
+    line-height: 1.6;
+}
