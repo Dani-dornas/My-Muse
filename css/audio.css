@@ -1,5 +1,5 @@
 .music-player {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
     border: dotted white 2px;
     border-radius: 12px;
     padding: 10px;
@@ -26,7 +26,6 @@
 .music-controls {
     display: flex;
     justify-content: space-between;
-    padding: 0px 25px;
     gap: 10px;
 }
 
